@@ -1,0 +1,90 @@
+/* ANCHOR ==> Main settings*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1em;
+}
+
+/* ANCHOR ==> Custom Properties */
+body {
+    --primary-color: #ffffff;
+    --secondary-color: #540065;
+
+        --color-bg-container1: #1e0251;
+        --color-bg-container2: #8209a0;
+        --color-bg-container3: #1e0251;
+        --color-bg-todo-app-h2-text-shadow: #424041;
+        --color-bg-form: #edeef0;  
+        --color-bg-button1: #a20bd9;
+        --color-bg-button2: #1e0251;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(150deg, var(--color-bg-container1), var(--color-bg-container2), var(--color-bg-container3));
+    padding: 2rem;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: var(--primary-color);
+    margin: 6.25rem auto 1.25rem;
+    padding: 2.5rem 1.88rem 4.38rem;
+    border-radius: 0.94rem;
+}  
+
+.todo-app h2 {
+    color: var(--secondary-color);
+    text-shadow: 4px 3px 5px var(--color-bg-todo-app-h2-text-shadow);
+    margin-bottom: 1.25rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-bg-form);
+    border-radius: 3.13rem;
+    padding-left: 1.25rem;
+    margin-bottom: 1.56rem;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0.63rem;
+    font-weight: 0.94rem;
+}
+button {
+    border: none;
+    outline: none;
+    padding: 1rem 3.13rem;
+    background: linear-gradient(200deg, var(--color-bg-button1), var(--color-bg-button2));
+    color: var(--primary-color);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0 1.25rem;
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.06rem;
+    padding: 0.63rem 0.63rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.list-todo h2 {
+    padding: 0.5rem 0.63rem;
+ 
+}
